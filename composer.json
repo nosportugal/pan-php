@@ -1,0 +1,27 @@
+{
+    "name": "nosportugal/pan-php",
+    "description": "Palo Alto Networks API PHP Package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lucas Tiago de Moraes"
+        }
+    ],
+    "require": {
+        "predis/predis": "^2.2",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PAN\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PAN\\Tests\\": "tests/"
+        }
+    }
+}
