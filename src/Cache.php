@@ -45,7 +45,7 @@ class Cache
 
     private function load(): void
     {
-        foreach (glob(getcwd() . '/src/Cache/*.php') as $filename) {
+        foreach (glob(__DIR__ . '/Cache/*.php') as $filename) {
             preg_match('/\/(\w+)\.php$/', $filename, $matches);
 
             $value = $matches[1];
