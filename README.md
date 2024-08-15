@@ -37,7 +37,7 @@ $body = $list->body(); // it is object with the body of message
 Esse pacote PHP tem o propósito de facilitar o acesso a API do Palo Alto Networks, atualmente conta com funcionalidades para manipular os endpoints: Addresses, SecurityRules, Services e Tags.
 
 ## VERSÃO
-1.1.1
+1.1.2
 
 ## INSTALAÇÃO
 
@@ -52,7 +52,7 @@ Esse pacote PHP tem o propósito de facilitar o acesso a API do Palo Alto Networ
         }
     ],
     "require": {
-        "nosportugal/pan-php": "1.1.1"
+        "nosportugal/pan-php": "1.1.2"
     }
 }
 ```

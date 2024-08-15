@@ -19,7 +19,7 @@ class File implements CacheInterface
 
         $data = $expire . ';' . $token;
 
-        file_put_contents($this->file, $data);
+        file_put_contents($this->file, $data, LOCK_EX);
     }
 
     public function get(): string
