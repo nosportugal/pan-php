@@ -43,6 +43,8 @@ class Services extends Base
     {
         $token = $this->token->getToken();
 
+        $this->skipAttribute('name');
+
         $response = $this->request->get(
             '/sse/config/v1/services',
             [

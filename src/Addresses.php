@@ -49,6 +49,8 @@ class Addresses extends Base
     {
         $token = $this->token->getToken();
 
+        $this->skipAttribute('name');
+
         $response = $this->request->get(
             '/sse/config/v1/addresses',
             [
@@ -64,7 +66,7 @@ class Addresses extends Base
     {
         $token = $this->token->getToken();
 
-        $this->setSkip();
+        $this->skipAttribute('id');
 
         $response = $this->request->post(
             '/sse/config/v1/addresses',
